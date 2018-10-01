@@ -1,0 +1,5 @@
+Title: Researcher interprets an image visually and derives data
+Subject: ENVRIplus TC_17
+Description: Template for provenance data relating the description of new particle formation events (data) derived from visual interpretation of a plot for particle size distribution data.
+Creator: Markus Stocker
+Coverage: Data Analysis

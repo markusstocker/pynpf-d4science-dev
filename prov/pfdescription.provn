@@ -1,0 +1,15 @@
+document
+  prefix var <http://openprovenance.org/var#>
+  prefix obo <http://purl.obolibrary.org/obo/>
+  prefix rdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+  prefix vargen <http://openprovenance.org/vargen#>
+  prefix tmpl <http://openprovenance.org/tmpl#>
+  entity(var:image)
+  entity(var:data)
+  agent(var:researcher,[prov:type='prov:Person'])
+  activity(vargen:visualization,-,-,[tmpl:startTime='var:t1',tmpl:endTime='var:t2',rdf:type='obo:OBI_0200111'])
+  wasDerivedFrom(var:data,var:image)
+  wasGeneratedBy(var:data,vargen:visualization)
+  wasAssociatedWith(vargen:visualization,var:researcher,-)
+  used(vargen:visualization,var:image)
+endDocument
