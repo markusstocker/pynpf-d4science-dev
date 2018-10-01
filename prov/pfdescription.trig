@@ -9,7 +9,6 @@
 
 
 {
-
 	var:image a prov:Entity .
 
 	var:data a prov:Entity .
@@ -23,6 +22,6 @@
 
 	var:data prov:wasDerivedFrom var:image .
 
-	vargen:visualization prov:wasAssociatedWith var:researcher .
-
+	vargen:visualization prov:wasAssociatedWith var:researcher ;
+		prov:used var:image .
 }

@@ -11,5 +11,5 @@ document
   wasDerivedFrom(var:data,var:image)
   wasGeneratedBy(var:data,vargen:visualization)
   wasAssociatedWith(vargen:visualization,var:researcher,-)
-  used(vargen:visualization,var:image)
+  used(vargen:visualization,var:image,-)
 endDocument
