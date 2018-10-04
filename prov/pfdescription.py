@@ -13,13 +13,13 @@ var:data a prov:Entity ;
 var:researcher a prov:Entity ;
   tmpl:value_0 orcid:0000-0001-5492-3212 .
 var:t1 a prov:Entity ;
-  tmpl:2dvalue_0_0 "2018-09-28T14:59:27.177710+02:00" .
+        tmpl:2dvalue_0_0  "2018-09-28T14:59:27.177710+02:00" .
 var:t2 a prov:Entity ;
-  tmpl:2dvalue_0_0 "2018-09-28T14:59:27.177710+02:00" ."""
+        tmpl:2dvalue_0_0 "2018-09-28T14:59:27.177710+02:00" ."""
 
 expand = 'https://envriplus-provenance.test.fedcloud.eu/templates/5bb24bfad6fa333a440a6613/expand'
 
-res = requests.get(expand, params={'fmt': 'rdfxml', 'bindings': bindings})
+res = requests.get(expand, params={'fmt': 'provn', 'bindings': bindings})
 
 print(res.url)
 print(res.text)

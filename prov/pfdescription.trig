@@ -10,7 +10,8 @@
 
 vargen:bundleId {
     var:data a prov:Entity ;
-        prov:wasDerivedFrom var:image .
+        prov:wasDerivedFrom var:image ;
+        prov:wasGeneratedBy vargen:visualization .
 
     vargen:visualization a prov:Activity, obo:OBI_0200111;
         tmpl:endTime var:t2 ;
