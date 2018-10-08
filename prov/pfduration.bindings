@@ -1,0 +1,17 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix tmpl: <http://openprovenance.org/tmpl#> .
+@prefix var: <http://openprovenance.org/var#> .
+@prefix orcid: <http://orcid.org/> .
+@prefix d4science: <https://data.d4science.org/> .
+@prefix tdata: <http://avaa.tdata.fi/web/smart/smear/> .
+
+var:dataset a prov:Entity ;
+  tmpl:value_0 tdata:c1c3d1e86b786a36a16d9ee4312cd292 .
+var:datum a prov:Entity ;
+  tmpl:value_0 d4science:ZHBQWDMrQzJaT2JOc2kzWHA0amdlNVVVN0s5VlhtdkFHbWJQNStIS0N6Yz0 .
+var:researcher a prov:Entity ;
+  tmpl:value_0 orcid:0000-0001-5492-3212 .
+var:t1 a prov:Entity ;
+        tmpl:2dvalue_0_0  "2018-09-28T13:12:52.976691+02:00" .
+var:t2 a prov:Entity ;
+        tmpl:2dvalue_0_0 "2018-09-28T13:12:52.976691+02:00" .

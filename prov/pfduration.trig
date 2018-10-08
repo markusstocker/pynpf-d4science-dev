@@ -1,0 +1,26 @@
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tmpl: <http://openprovenance.org/tmpl#> .
+@prefix var: <http://openprovenance.org/var#> .
+@prefix vargen: <http://openprovenance.org/vargen#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+vargen:bundleId {
+    var:dataset a prov:Entity, obo:IAO_0000100 .
+
+    var:datum a prov:Entity, obo:IAO_0000032, obo:OBI_0000679 ;
+        prov:wasDerivedFrom var:dataset ;
+        prov:wasGeneratedBy vargen:calculation .
+
+    vargen:calculation a prov:Activity, obo:OBI_0200079 ;
+        tmpl:endTime var:t2 ;
+        tmpl:startTime var:t1 ;
+        prov:used var:dataset ;
+        prov:wasAssociatedWith var:researcher .
+
+    var:researcher a prov:Agent,
+            prov:Person .
+}

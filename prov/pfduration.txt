@@ -1,0 +1,5 @@
+Title: Researcher computes mean duration of events
+Subject: ENVRIplus TC_17
+Description: Template for provenance data relating the computed mean event duration to the dataset of event descriptions.
+Creator: Markus Stocker
+Coverage: Data Analysis
