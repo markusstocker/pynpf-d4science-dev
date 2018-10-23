@@ -2,7 +2,6 @@
 import sys
 import requests
 import csv
-from PIL import Image
 from StringIO import StringIO
 from dateutil import tz
 from hashlib import md5
